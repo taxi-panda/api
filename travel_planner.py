@@ -1,8 +1,7 @@
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, jsonify
 import pandas as pd
 import numpy as np
 import json
-import logging
 from  sklearn.ensemble import GradientBoostingRegressor
 
 app = Flask(__name__)
