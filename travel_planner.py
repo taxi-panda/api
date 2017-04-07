@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, jsonify
-import pickle
+import pandas as pd
 import numpy as np
 import json
 import logging
@@ -17,8 +17,8 @@ def results():
 		inputs = request.form
 
 	#Load the pickled model
-		time_model = pickle.load(open('pkl_time.pkl', 'rb'))
-		base_fare_model = pickle.load(open('pkl_base_fare.pkl', 'rb'))
+		time_model = pd.read_pickle('pkl_time.pkl')
+		base_fare_model = pd.read_pickle('pkl_base_fare.pkl')
 
 	try:
 		is_yellow = int(inputs['is_yellow'][0])
