@@ -1,1 +1,1 @@
-web: gunicorn app:test_flask.py --test.log
+web: gunicorn gettingstarted.wsgi

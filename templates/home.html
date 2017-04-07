@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>Cab Price and Delay Predictor</title>
+<body>
+
+<form action = "/results" method="POST">
+	<p> Select Origin:<input name="origin" type ="text" value="JFK" /> </p>
+	<p> Select Destination: <input name="dest" type ="text" value="LAX" /> </p>
+	<p> Select Airline:   
+	<select name="unique_carrier">
+		<option value="0">Green Cab </option>
+		<option value="1" selected>Yellow Cab </option>
+	</select>
+	<p> Select Day of Week:<input name="day_of_week" type ="text" value="1" /> </p>
+	<p> Select Departure Hour: <input name="dep_hour" type ="text" value="10" /> </p>
+	<p> <input type ="submit" value="submit" /> </p>
+</form>
+</body>
+</html>
+
+
+
