@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import json
 import logging
-from  sklearn.ensemble import GradientBoostingRegressor 
+from  sklearn.ensemble import GradientBoostingRegressor
 
 app = Flask(__name__)
 
@@ -51,7 +51,7 @@ def results():
 	try:
 		trip_distance = float(['trip_distance'][0])
 	except:
-		trip_distance = 10 
+		trip_distance = 10
 
 	time_pred_array = np.array([is_yellow, pu_latitude,\
             pu_longitude, do_latitude, do_longitude, pu_hour, pu_day])
