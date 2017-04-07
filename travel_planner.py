@@ -21,35 +21,35 @@ def results():
 		base_fare_model = pickle.load(open('pkl_base_fare.pkl', 'rb'))
 
 	try:
-		is_yellow = inputs['is_yellow'][0]
+		is_yellow = int(inputs['is_yellow'][0])
 	except:
 		is_yellow = 1
 	try:
-		pu_latitude = inputs['pu_latitude'][0]
+		pu_latitude = float(inputs['pu_latitude'][0])
 	except:
 		pu_latitude = 40.75
 	try:
-		pu_longitude = inputs['pu_longitude'][0]
+		pu_longitude = float(inputs['pu_longitude'][0])
 	except:
 		pu_longitude = -73.97
 	try:
-		do_latitude = inputs['do_latitude'][0]
+		do_latitude = float(inputs['do_latitude'][0])
 	except:
 		do_latitude = 40.77
 	try:
-		do_longitude = inputs['do_longitude'][0]
+		do_longitude = float(inputs['do_longitude'][0])
 	except:
 		do_longitude = -73.95
 	try:
-		pu_hour = inputs['pu_hour'][0]
+		pu_hour = int(inputs['pu_hour'][0])
 	except:
 		pu_hour = 12
 	try:
-		pu_day = inputs['pu_day'][0]
+		pu_day = int(inputs['pu_day'][0])
 	except:
 		pu_day = 5
 	try:
-		trip_distance = inputs['trip_distance'][0]
+		trip_distance = float(['trip_distance'][0])
 	except:
 		trip_distance = 10 
 
@@ -74,4 +74,4 @@ if __name__ == '__main__':
 #    PORT = '4000'
 
 #    app.run(HOST, PORT)
-	app.run()
+    app.run()
