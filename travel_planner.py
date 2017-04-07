@@ -40,10 +40,10 @@ def results():
             do_longitude = inputs['do_longitude'][0]
         except:
             do_longitude = -73.95
-	try:
-	    pu_hour = inputs['pu_hour'][0]
-	except:
-	    pu_hour = 12
+        try:
+            pu_hour = inputs['pu_hour'][0]
+        except:
+            pu_hour = 12
 	try:
 	    pu_day = inputs['pu_day'][0]
 	except:
