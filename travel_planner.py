@@ -16,9 +16,8 @@ def results():
 	if request.method=='POST':
 		inputs = request.form
 
-	#Load the pickled model
-		time_model = pd.read_pickle('pkl_time.pkl')
-		base_fare_model = pd.read_pickle('pkl_base_fare.pkl')
+		time_model = pd.read_pickle("pkl_time.pkl")
+		base_fare_model = pd.read_pickle("pkl_base_fare.pkl")
 
 	try:
 		is_yellow = int(inputs['is_yellow'][0])
