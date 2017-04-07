@@ -1,8 +1,8 @@
 alabaster==0.7.9
 algopy==0.5.3
-anaconda-client==1.6.0
-anaconda-navigator==1.5
-anaconda-project==0.4.1
+anaconda-client==
+anaconda-navigator==
+anaconda-project==
 argcomplete==1.0.0
 astroid==1.4.9
 astropy==1.3
