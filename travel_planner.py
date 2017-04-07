@@ -20,7 +20,7 @@ def results():
         time_model = pickle.load(open('pkl_time.pkl', 'rb'))
         base_fare_model = pickle.load(open('pkl_base_fare.pkl', 'rb'))
 
-	try:
+        try:
             is_yellow = inputs['is_yellow'][0]
         except:
             is_yellow = 1
@@ -53,10 +53,10 @@ def results():
 	except:
 	    trip_distance = 10 
 
-	time_pred_array = np.array([is_yellow, pu_latitude,\
+        time_pred_array = np.array([is_yellow, pu_latitude,\
             pu_longitude, do_latitude, do_longitude, pu_hour, pu_day])
 
-	trip_time = time_model.predict(time_pred_array)[0]
+        trip_time = time_model.predict(time_pred_array)[0]
 
         base_fare_array = np.array([trip_distance, trip_time])
 
@@ -64,7 +64,7 @@ def results():
 
         final_fare = base_fare
 
-	return jsonify(trip_time, final_fare)
+        return jsonify(trip_time, final_fare)
 
 
 if __name__ == '__main__':
